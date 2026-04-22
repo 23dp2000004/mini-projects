@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipher Encoder & Decoder</title>
+</head>
+<body>
+    <h1>Cipher Encoder & Decoder</h1>
+
+    <h2>Encoder:</h2>
+
+    <label for="cipherType">Choose Cipher Type:</label>
+    <select id="cipherType">
+        <option value="" disabled selected>Select cipher</option>
+        <option value="a1z26">A1Z26</option>
+        <option value="atbash">Atbash</option>
+    </select>
+
+    <br><br>
+
+    <button id="encodeBttn">Encode</button>
+
+    <br><br>
+
+    <p>Enter your message here:</p>
+    <input type="text" id="input" placeholder="Enter text">
+
+    <p>Encrypted message:</p>
+    <p><span id="encryptedMesg">_____</span></p>
+
+    
+    <br>
+
+    <p>---------------------------------------------------</p>
+
+    <h2>Decoder:</h2>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

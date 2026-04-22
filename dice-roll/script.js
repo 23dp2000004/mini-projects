@@ -30,11 +30,8 @@ button.addEventListener("click", function(){
 
     }
     
-
     // make the html display the value
     const resultElement = document.getElementById("result");
     resultElement.textContent = value;
-
-
 
 });
