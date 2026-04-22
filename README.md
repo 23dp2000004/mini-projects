@@ -5,6 +5,6 @@ Live site: https://23dp2000004.github.io/mini-projects/
 
 ## Projects
 
-- Dice Roller :
-- Resistor Value Calculator :
-- To-Do List Tracker
+- Dice Roller : https://23dp2000004.github.io/mini-projects/dice-roll/
+- Resistor Value Calculator : https://23dp2000004.github.io/mini-projects/resistor-value-calculator/
+- To-Do List Tracker : 
