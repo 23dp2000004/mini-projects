@@ -14,7 +14,7 @@
     <select id="cipherType">
         <option value="" disabled selected>Select cipher</option>
         <option value="a1z26">A1Z26</option>
-        <option value="atbash">Atbash</option>
+        <!-- <option value="atbash">Atbash</option> -->
     </select>
 
     <br><br>
@@ -35,6 +35,25 @@
     <p>---------------------------------------------------</p>
 
     <h2>Decoder:</h2>
+
+    <label for="decipherType">Choose Cipher Type:</label>
+    <select id="decipherType">
+        <option value="" disabled selected>Select cipher</option>
+        <option value="a1z26">A1Z26</option>
+        <!-- <option value="atbash">Atbash</option> -->
+    </select>
+
+    <br><br>
+
+    <button id="decodeBttn">Decode</button>
+
+    <br><br>
+
+    <p>Enter your Encrypted message here:</p>
+    <input type="text" id="encryptedInput" placeholder="Enter text">
+
+    <p>Decoded message:</p>
+    <p><span id="decodedMesg">_____</span></p>
 
 
 
