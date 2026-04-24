@@ -44,6 +44,9 @@ buttonE.addEventListener("click", function(){
         const resultElement = document.getElementById("encryptedMesg");
             resultElement.textContent = encryptedMesg;
 
+        // send the encryped message to the decoders input
+        document.getElementById("encryptedInput").value = encryptedMesg;
+
     }
 
 
