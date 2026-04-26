@@ -29,8 +29,7 @@ buttonE.addEventListener("click", function(){
                 let codeNum = ch.charCodeAt(0) - 64;
                 let fcode = codeNum.toString().padStart(2, "0");
 
-                // handle . , ? ! special symbols later
-
+                
                 encryptedMesg += fcode;
                 //console.log(ch, code);
                 //console.log(encryptedMesg)
