@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+</head>
+<body>
+
+    <h1>My Notes</h1>
+
+    <p><a href="/favorites">View Favorites</a></p>
+
+    <!-- Form to add a note -->
+    <form method="POST">
+        <textarea maxlength="200" name="content" id="note-content" placeholder="Enter note"></textarea>
+        <p id="char-count">Characters: 0/200</p>
+        <button type="submit">Add Note</button>
+    </form>
+
+    <hr>
+
+    <!-- Display notes -->
+    {% for note in notes %}
+        <p>{{ note.content }} <a href="/edit/{{ note.id }}">Edit</a>  <a href="/delete/{{ note.id }}">Delete</a>
+                                <!-- to be able to edit the notes -->. <!-- to be able to delete the notes -->
+                                 <a href="/favorite/{{ note.id }}">
+                                    {% if note.is_favorite %}
+                                        ❤️
+                                    {% else %}
+                                        🤍
+                                    {% endif %}
+                                </a>
+        </p>
+    {% endfor %}
+
+     
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

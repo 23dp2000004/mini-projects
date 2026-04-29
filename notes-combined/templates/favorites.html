@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Notes</title>
+</head>
+<body>
+
+    <h1>Favorite Notes</h1>
+
+    {% for note in notes %}
+        <p>{{ note.content }}</p>
+    {% endfor %}
+
+    <p><a href="/">Go Back to Main Page</a></p>
+    
+</body>
+</html>
