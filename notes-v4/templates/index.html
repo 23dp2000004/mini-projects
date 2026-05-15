@@ -17,9 +17,23 @@
 
     <hr>
 
+
     <!-- Display notes -->
     {% for note in notes %}
-        <p>{{ note.content }}</p>
+
+    <div>
+
+        <p>{{ note.content }}
+            <a href="/toggle/{{ note.id }}">
+                {% if note.status == "done" %}
+                    ✅ done
+                {% else %}
+                    ⏳ pending
+                {% endif %}
+            </a></p>
+
+    </div>
+
     {% endfor %}
 
     

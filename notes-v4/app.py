@@ -11,8 +11,9 @@ db = SQLAlchemy(app)
 
 
 class Note(db.Model):
-    id = db.Column(db.Integer, primary_key = 1)
-    content = db.Column(db.String(200), nullable =0)
+    id = db.Column(db.Integer, primary_key = True)
+    content = db.Column(db.String(200), nullable = False)
+    status = db.Column(db.String, nullable = False, default = "pending")
 
 
 with app.app_context():
@@ -36,7 +37,22 @@ def index():
     notes = Note.query.all()
     return render_template('index.html', notes=notes)
 
+# toggle
+@app.route('/toggle/<int:id>')
+def toggle(id):
 
+    note = Note.query.get(id)
+
+    note.status = (
+        "done"
+        if note.status == "pending"
+        else "pending"
+    )
+
+
+    db.session.commit()
+
+    return redirect('/')
 
 if __name__ == '__main__':
     app.run(debug=1)
