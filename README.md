@@ -24,3 +24,6 @@ Each version is implemented stand alone and then combined into one that has all 
 - notes-v3 : can delete notes.
 - notes-v3.5 : can see character count while typing note, can favorite/unfavorite notes, biggger text box.
 - notes-v4 : can mark notes as pending/done.
+<!-- - notes-v5 : 
+- notes-v6 : 
+- notes-v7 :  -->
